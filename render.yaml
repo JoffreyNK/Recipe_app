@@ -1,11 +1,10 @@
 databases:
-  - name: Recipe-app
+  - name: Receipe_app_production
     databaseName: Receipe_app_production
-    user: Receipe_app
-
+    user: Receipe_app_production
 services:
   - type: web
-    name: Receipe_app
+    name: Receipe_app_production
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
