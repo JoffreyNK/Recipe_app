@@ -82,6 +82,6 @@ test:
 production:
   <<: *default
   database: Receipe_app_production
-  username: Receipe_app
+  username: Receipe_app_production
   url: <%= ENV["DATABASE_URL"] %>
   password: <%= ENV["RECEIPE_APP_DATABASE_PASSWORD"] %>
